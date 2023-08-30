@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>門市據點</title>
+  <link rel="stylesheet" href="../assets/scss/pages/set.scss">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="container">
+      <div class="store-set">
+        <p>門市據點</p>
+      </div>
+      <div class="sel-store ">
+        <label>選擇分店</label>
+        <select name="list" id="list" class="ml-20">
+          <option value="台北中山旗艦店">台北中山旗艦店</option>
+          <option value="台北綠園店">台北綠園店</option>
+          <option value="台中清水旗艦店">台中清水旗艦店</option>
+          <option value="高雄中正形象店">高雄中正形象店</option>
+        </select>
+      </div>
+      <div class="cardmap flex">
+        <div class="card ">
+          <img
+            src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ULcQFc_4AiirwCCOJgtsbg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=120.942055&pitch=0&thumbfov=100"
+            alt="">
+          
+          <div class="info">
+            <p class="p-title py-8">台北中山旗艦店</p>
+            <p class="flex "><span class="material-symbols-outlined  flex justify-center align-center">
+                call
+              </span>電話：(02)000-1234</p>
+            <p class="flex "><span class="material-symbols-outlined  flex justify-center align-center ">
+                schedule
+              </span>
+              營業時間：10:00-21:00</p>
+            <p class="flex mb-16"><span class="material-symbols-outlined flex justify-center align-center">
+                location_on
+              </span>地址：台北市中山區南京東路25巷2-1號</p>
+          </div>
+
+        </div>
+
+        <div class="mapw ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1937295667617!2d121.58451357638589!3d25.0614221371849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1692664979305!5m2!1szh-TW!2stw"
+            class="map"  style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
