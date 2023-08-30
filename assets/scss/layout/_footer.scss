@@ -1,9 +1,9 @@
 .footer{
   padding-top: 60px;
-    @media (max-width:768px) {
-      padding-top: 56px;
-    }
-    @media (max-width:375px) {
+    // @media (max-width:768px) {
+    //   padding-top: 56px;
+    // }
+    @media (max-width:767px) {
       padding-top: 24px;
       padding-bottom: 24px;
     }
@@ -12,21 +12,21 @@
 
   .copyright{
     font-size: 16px;
-    @media (max-width:375px) {
+    @media (max-width:767px) {
       flex-direction: column;
     }
     p{
-      @media (max-width:375px) {
+      @media (max-width:767px) {
         margin-bottom: 8px;
       }
     }
     &-txt{
-      @media (min-width:375px) {
+      @media (min-width:767px) {
        margin-right: 48px;
       }
     }
     &-col{
-      @media (max-width:375px) {
+      @media (max-width:767px) {
         flex-direction: column;
       }
     }
@@ -34,7 +34,7 @@
 }
 
 .nav{
-  @media  (max-width:375px) {
+  @media  (max-width:767px) {
     display: none;
 }
   li{
@@ -56,21 +56,21 @@
   img{ 
     width: 24px;
     display: none;
-    @media  (max-width:375px) {
+    @media  (max-width:767px) {
         display: flex;
         align-items: center;
         justify-content: center;
     }
   }
   .tel{
-    @media (max-width:375px) {
+    @media (max-width:767px) {
       font-size: 16px;
     }
   }
   .mail{
     padding-bottom: 32px;
     border-bottom: #ffffff solid 2px;
-    @media (max-width:375px) {
+    @media (max-width:767px) {
       font-size: 16px;
     }
   }
