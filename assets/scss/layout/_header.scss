@@ -4,14 +4,14 @@
   // PC 
   max-width: 1320px;
   padding: 0 12px;
-//   @media (max-width:768px) {
+//   @media (max-width:996px) {
 //     max-width: 720px;
 //    padding: 0 36px;
 // }
-@media (max-width:767px) {
-  max-width: 372px;
-  padding: 0 ;
-}
+// @media (max-width:767px) {
+//   max-width: 372px;
+//   padding: 0 ;
+// }
 
 }
 
@@ -21,18 +21,18 @@
   font-size: 64px;
   padding: 16px 0;
 
-  // @media (max-width:768px) {
-  //   padding-bottom: 0;
-  // }
+  @media (max-width:996px) {
+    padding-bottom: 0;
+  }
 
   a {
     display: block;
     color: #ffffff;
     font-size: 20px;
 
-    // @media (max-width:768px) {
-    //   align-self: self-start;
-    // }
+    @media (max-width:996px) {
+      align-self: self-start;
+    }
   }
 
   &-wrap {
@@ -64,9 +64,7 @@
     height: 100%;
    
 
-    // @media (max-width:768px) {
-    //   margin-right: 64px;
-    // }
+   
 
     @media (max-width:767px) {
       width: 50%;
