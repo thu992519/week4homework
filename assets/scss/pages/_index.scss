@@ -1,7 +1,8 @@
-.index-nav {
+.ser-nav {
   border-left: 2px solid #FbF2f2; 
   border-right: 2px solid #FbF2f2; 
-  
+  cursor: pointer;
+
   p{
     font-size: 32px;
   }
@@ -21,7 +22,7 @@
     border-bottom: 5px solid $primary01; 
   }
 
-.container-index{
+.container-ser{
   margin: 0 auto;
   // PC 
   max-width: 100vw;
@@ -30,7 +31,7 @@
   .row{
     height: 100%;
   }
-  .indexpic{
+  .pic{
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -52,14 +53,29 @@
   background-size: cover;
   width: 100%;
   height: 100%;
+  
 }
+@media (max-width:996px) {
+  .imgleft{
+    background-image: url('/assets/img/product-header-sm-1.png');
+
+  }
+  .imgright{
+    background-image: url('/assets/img/product-header-sm-2.png');
+
+  }
+}
+
 
 }
 
-.index-text{
+.ser-text{
   p{
     font-size:24px ;
     font-weight: bolder;
   }
  
+}
+.price{
+  color: $primary01;
 }
