@@ -1,4 +1,8 @@
-@import './helper/variable';
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import './utils/variables';
+
+// @import './helper/variable';
 @import './layout/reset';
 
 @import'./helper/public.scss';
@@ -7,6 +11,9 @@
 @import './layout/footer.scss';
 @import './pages/index.scss';
 @import './pages/set.scss';
+
+@import "../../node_modules/bootstrap";
+
 
 
 

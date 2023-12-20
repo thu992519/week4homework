@@ -10,10 +10,39 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-4 col-4 index-nav active">
+          <p>OPTICAL</p>
+        </div>
+        <div class="col-md-4 col-4 index-nav">
+          <p>SUNGLASSES</p>
+        </div>
+        <div class="col-md-4 col-4 index-nav">
+          <p>FUNCTIONAL</p>
+        </div>
+      </div>
+      </div>
+    </div>
+<div class="container-index" >
+  <div class="row justify-content-center ">
+    <div class="indexpic d-flex">
+      <div class="imgleft"></div>
+      <div class="imgright"></div>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row justify-content-center index-text">
+    <div class="col-12 justify-content-center text-center">
+      <p class="mb-0">Celluloid Combi</p>
+     <p>賽璐鉻鈦金屬混合框</p>
+    </div>
+  </div>
+  
+</div>
+   
+    
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

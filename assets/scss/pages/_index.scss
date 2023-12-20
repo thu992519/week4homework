@@ -1,3 +1,65 @@
-.index-title {
-  font-size: 100px;
+.index-nav {
+  border-left: 2px solid #FbF2f2; 
+  border-right: 2px solid #FbF2f2; 
+  
+  p{
+    font-size: 32px;
+  }
+  @media (max-width:996px) {
+    p{
+      font-size: 20px;
+    }
+  }
+  @media (max-width:758px) {
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.active{
+    border-bottom: 5px solid $primary01; 
+  }
+
+.container-index{
+  margin: 0 auto;
+  // PC 
+  max-width: 100vw;
+  padding: 0 12px;
+  height: 280px;
+  .row{
+    height: 100%;
+  }
+  .indexpic{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+
+}
+.imgleft{
+  background-image: url('/assets/img/product-header-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.imgright{
+  background-image: url('/assets/img/product-header-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+.index-text{
+  p{
+    font-size:24px ;
+    font-weight: bolder;
+  }
+ 
 }
