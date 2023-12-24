@@ -5,10 +5,14 @@
 // @import './helper/variable';
 @import './layout/reset';
 
-@import'./helper/public.scss';
+
+
+
+@import './helper/public.scss';
 @import './helper/flex';
 @import './layout/header.scss';
 @import './pages/serise.scss';
+@import './pages/login.scss';
 @import './layout/footer.scss';
 @import './pages/index.scss';
 @import './pages/set.scss';
