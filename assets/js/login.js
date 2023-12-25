@@ -1,13 +1,19 @@
-// import axios from 'axios';
+import axios from 'axios';
 
-// axios.get('/assets/php/login.php')
-//   .then(response => {
-//     // 处理成功的响应
-//     console.log(response.data);
-//     console.log("123");
-//   })
-//   .catch(error => {
-//     // 处理错误
-//     console.log("123");
-    
-//   });
+let btn=document.querySelector("#ok_btn")
+
+
+
+btn.addEventListener("click",function(){
+    let acc=document.querySelector("#admin").value;
+    let password=document.querySelector("#password").value;
+    console.log(acc);
+    console.log(password);
+axios.post('http://127.0.0.1/topicphp/loginpdo.php', { admin: acc ,password:password})
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+})
