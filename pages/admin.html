@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>後臺管理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+
+  <%- include('./layout/nav'); -%>
+
+    <div class="main mt-0 pt-0">
+      <div class="container pb-5">
+        
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-10 pt-5">
+                <table class="table table-bordered table-striped table-rwd">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>商品編號</th>
+                            <th>商品名稱</th>
+                            <th>商品價格</th>
+                            <th>商品數量</th>
+                            <th>商品備註</th>
+                            <th>建檔時間</th>
+                            <th>修改/刪除</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mytable">
+                        <tr>
+                            <td data-th="商品編號">XX</td>
+                            <td data-th="商品名稱">XXX</td>
+                            <td data-th="商品價格">XX</td>
+                            <td data-th="商品數量">XX</td>
+                            <td data-th="商品備註">XX</td>
+                            <td data-th="建檔時間">XX</td>
+                            <td data-th="修改/刪除">
+                                <button class="btn btn-success">修改</button>
+                                <button class="btn btn-danger">刪除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+     
+    
+    </div>
+
+
+
+
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

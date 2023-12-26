@@ -1,0 +1,56 @@
+.main{
+  margin-left: 296px;
+}
+.comment{
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+}
+.ts12{
+  font-size: 12px;
+  &-gray{
+    color:#6C757D ;
+   }
+}
+.ts14{
+font-size: 14px;
+ span{
+  background-color: #f8f9fa;
+  color: #198754;
+ }
+}
+.ts16{
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+.list-fontf{
+  font-family: 'Lato', sans-serif;
+}
+.iconwh{
+  width: 24px;
+  height: 24px;
+}
+.img-id{
+  width: 40px;
+  height: 40px;
+}
+.square-image{
+  width: 40px;
+  height: 40px;
+  object-fit:cover;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+// 字型
+// font-family: 'Castoro', serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Mono', monospace;
