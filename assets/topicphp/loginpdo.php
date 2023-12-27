@@ -1,8 +1,10 @@
 <?php
- header('Access-Control-Allow-Origin: *');
- header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
- header('Access-Control-Allow-Headers: Content-Type, admintest');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, admintest');
+ 
 
+ require 'pdoset.php';
  // 获取原始的 JSON 数据
 $inputJSON = file_get_contents('php://input');
 
@@ -10,10 +12,6 @@ $inputJSON = file_get_contents('php://input');
 $data = json_decode($inputJSON, true);
 
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "glass03";
 
     $admin_name=$data["admin"];
     $admin_password=$data["password"];
