@@ -1,4 +1,4 @@
-import"./main-eeda7a48.js";console.log("serise");let a=document.querySelectorAll(".ser-nav");a.forEach(e=>{e.addEventListener("click",l=>{if(a.forEach(c=>{c.classList.remove("active")}),e.classList.add("active"),l.target.classList[3]=="sunglass"){let c=document.querySelector(".serpic");c.innerHTML=`  <div class="imgleft2"></div>
+import"./main-3338764d.js";console.log("serise");let a=document.querySelectorAll(".ser-nav");a.forEach(e=>{e.addEventListener("click",l=>{if(a.forEach(c=>{c.classList.remove("active")}),e.classList.add("active"),l.target.classList[3]=="sunglass"){let c=document.querySelector(".serpic");c.innerHTML=`  <div class="imgleft2"></div>
             <div class="imgright2"></div>`;let s="",i="",t=document.querySelector(".ser-title"),d=document.querySelector(".ser-content");s=`<p class="mb-0">SUN GLASS</p>
             <p>太陽眼鏡</p>`,t.innerHTML=s,i=`<div class="row justify-content-center ">
             <div class="col-md-4 col-6">
