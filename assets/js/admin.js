@@ -3,6 +3,9 @@ import axios from 'axios';
 let navlink=document.querySelectorAll(".nav-link");
 let head=document.querySelector('.table-head');
 let mytable=document.querySelector("#mytable");
+let newbtn=document.querySelector("#m_new_btn");
+
+
 
 let list=[]; 
 
@@ -53,7 +56,7 @@ function showdata(list){
        str+=` <tr>
        <td data-th="會員編號" >${item.ID}</td>
        <td data-th="會員名稱" >${item.name}</td>
-       <td data-th="會員價格" >${item.city}</td>
+       <td data-th="會員城市" >${item.city}</td>
        <td data-th="建檔時間" >${item.lastlogindatetime}</td>
        <td data-th="修改/刪除">
            <button class="btn btn-success edit"  data-bs-toggle="modal" data-bs-target="#updateModal"
@@ -98,3 +101,4 @@ function editshow(){
         })
     })
 }
+
