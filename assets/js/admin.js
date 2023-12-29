@@ -4,6 +4,7 @@ let navlink=document.querySelectorAll(".nav-link");
 let head=document.querySelector('.table-head');
 let mytable=document.querySelector("#mytable");
 let newbtn=document.querySelector("#m_new_btn");
+let edit_send=document.querySelector("#m_update_btn");
 
 
 
@@ -90,14 +91,28 @@ function editshow(){
     let edit_button=document.querySelectorAll(".edit");
     edit_button.forEach((item)=>{
         item.addEventListener("click",function(){
-            console.log(item);
-            console.log(item.getAttribute('data-id'));
 
-            // document.querySelector('#')
+            document.querySelector('#m_pname').value=item.getAttribute('data-name');
+            document.querySelector('#m_city').value=item.getAttribute('data-city');  
 
-            // $("#m_pname").val($(this).data("pname"));
-            //     $("#m_price").val($(this).data("price"));
-            //     $("#m_pnum").val($(this).data("pnum"));
+            edit_send.addEventListener("click",function(){
+                console.log(document.querySelector('#m_pname').value);
+                axios.put('http://127.0.0.1/topicphp/admin/update.php', { m_id:item.getAttribute('data-id'),m_pname: item.getAttribute('data-name') ,m_city:item.getAttribute('data-city')},{ headers: {
+                  'Content-Type': 'application/json',
+                  'admintest': 'admintest' // 這裡的值可以是任何你想要傳遞的字串
+                },})
+                  .then(response => {
+                    console.log(response);
+                    // location.reload();
+                
+                  })
+                  .catch(error => {
+                    console.log(error);
+                   
+                  });
+                })
+                
+           
         })
     })
 }
