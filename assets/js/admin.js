@@ -9,7 +9,7 @@ let edit_send=document.querySelector("#m_update_btn");
 
 
 
-
+let productlist=[];
 let list=[]; 
 
 navlink.forEach((item)=>{
@@ -19,7 +19,7 @@ navlink.forEach((item)=>{
         })
         
         item.classList.add("active");
-
+        
       
         if(e.target.classList[5]=="member"){
             axios.get('http://127.0.0.1/topicphp/admin/getmember.php',{ headers: {
@@ -36,7 +36,7 @@ navlink.forEach((item)=>{
         }
         if(e.target.classList[5]=="products"){
             console.log("p");
-            mytable.innerHTML=``;
+            productinit()
 
         }
     })
@@ -174,3 +174,56 @@ function deltodo(){
     })
    
 }
+
+
+
+
+//產品
+function productinit(){
+    axios.get('http://127.0.0.1/topicphp/admin/getproduct.php',{ headers: {
+        'Content-Type': 'application/json',
+        'admintest': 'admintest' // 這裡的值可以是任何你想要傳遞的字串
+      },}).then((res)=>{
+        console.log('456')
+        productlist=res.data;
+      
+        productshowdata(productlist);
+        // membereditshow();
+        // membercreatshow();
+        // memberdeltodo();
+        
+    })
+}
+function productshowdata(list){
+    let str='';
+    
+   
+    head.innerHTML=`<tr>
+    <th>產品編號</th>
+    <th>產品名稱</th>
+    <th>產品價格</th>
+    <th>產品類型</th>
+    <th>產品路徑</th>
+    <th>建檔時間</th>
+    <th>修改/刪除</th>
+</tr>`
+
+    list.forEach((item)=>{
+       str+=` <tr>
+       <td data-th="會員編號" >${item.pid}</td>
+       <td data-th="會員名稱" >${item.pname}</td>
+       <td data-th="會員價格" >${item.price}</td>
+       <td data-th="會員類別" >${item.class}</td>
+       <td data-th="會員路徑" >${item.path}</td>
+       <td data-th="建檔時間" >${item.lastlogindatetime}</td>
+       <td data-th="修改/刪除">
+           <button class="btn btn-success edit"  data-bs-toggle="modal" data-bs-target="#updateModal"
+           data-id="${item.pid}"  data-name="${item.pname}"  data-price="${item.price}" data-class="${item.class}" data-path="${item.path}" data-time="${item.lastlogindatetime}">修改</button>
+           <button class="btn btn-danger pdel" data-id="${item.pid}" id="pdel">刪除</button>
+       </td>
+   </tr>`;
+    })
+    
+    mytable.innerHTML=str;
+
+} 
